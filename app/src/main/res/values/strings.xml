@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">My Application</string>
     <string name="edit_message">Введите сообщение!</string>
-    <string name="button_send">Отпрвавить!</string>
+    <string name="button_send">Отправить!</string>
 
 
 
