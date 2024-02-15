@@ -4,5 +4,8 @@
     <string name="button_send">Отправить!</string>
     <string name="title_activity_display_message">Мое сообщение</string>
 
+    <string name="edit_message2">Введите ваше второе сообщение!</string>
+    <string name="title_activity_display_message2">Мое сообщение</string>
+
 
 </resources>
