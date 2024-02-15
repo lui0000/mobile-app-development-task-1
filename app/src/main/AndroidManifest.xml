@@ -13,16 +13,7 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
-            android:name="DisplayMessageActivity2"
-            android:label="@string/title_activity_display_message"
-            android:parentActivityName="MainActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="MainActivity" />
-        </activity>
-
-        <activity
-            android:name="DisplayMessageActivity"
+            android:name=".DisplayMessageActivity"
             android:label="@string/title_activity_display_message"
             android:parentActivityName="MainActivity" >
             <meta-data

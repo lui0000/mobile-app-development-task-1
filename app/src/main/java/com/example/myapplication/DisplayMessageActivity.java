@@ -1,10 +1,15 @@
 package com.example.myapplication;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.view.LayoutInflater;
+import android.view.MenuItem;
+import android.view.ViewGroup;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 public class DisplayMessageActivity extends AppCompatActivity {
 
@@ -22,6 +27,24 @@ public class DisplayMessageActivity extends AppCompatActivity {
         textView.setText(message);
         // Делаем textView корневым элементов разметки activity
         setContentView(textView);
-
     }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.display_message_textview) {
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+    public static class PlaceholderFragment extends Fragment {
+        public PlaceholderFragment() { }
+        @Override
+        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                                 Bundle savedInstanceState) {
+            View rootView = inflater.inflate(R.layout.activity_display_message,
+                    container, false);
+            return rootView;
+        }
+    }
+
 }
