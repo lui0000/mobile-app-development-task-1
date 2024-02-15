@@ -6,6 +6,9 @@
 
     <string name="edit_message2">Введите ваше второе сообщение!</string>
     <string name="title_activity_display_message2">Мое сообщение</string>
+    <string name="activity_display_message2">Мое сообщение</string>
+
+    <string name="fragment_display_message"> мое сообщение2</string>
 
 
 </resources>
