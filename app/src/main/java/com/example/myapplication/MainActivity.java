@@ -19,10 +19,16 @@ public class MainActivity extends AppCompatActivity {
     }
     /** Данный метод вызывается при нажатии на кнопку */
     public void sendMessage(View view) {
+        // создание намерения, которое перекидывает нас к другому явлению
         Intent intent = new Intent(this, DisplayMessageActivity.class);
         EditText editText = (EditText) findViewById(R.id.edit_message);
         String message = editText.getText().toString();
+        //Полученный текст добавляется в объект Intent в
+        // качестве дополнительной информации с ключом EXTRA_MESSAGE
         intent.putExtra(EXTRA_MESSAGE, message);
+        // метод запускающий другую активность
         startActivity(intent);
     }
+
+
 }
